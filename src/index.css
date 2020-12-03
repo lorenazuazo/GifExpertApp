@@ -1,0 +1,43 @@
+*{
+  font-family: Helvetica, Arial, sans-serif;
+}
+body{
+  padding: 60px;
+}
+
+input{
+  border-color: rgb(94, 93, 93);
+  border-width: 0 0 2px;
+  color: gray;
+  font-size: 1.2rem;
+  outline: 0;
+  width: 50%; 
+}
+
+input:focus {
+  border-color: rgb(143, 143, 247);
+}
+
+.card-grid{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card{
+  align-content: center;
+  border: 1px solid grey;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  overflow: hidden; /*para que las img no se salgan del contenedor*/
+}
+
+.card p{
+  padding: 5px;
+  text-align: center;
+}
+
+.card img{
+  max-height: 170px;
+}

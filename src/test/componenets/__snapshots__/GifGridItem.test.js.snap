@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Suite component <GifGridItem /> El componente se debe mostrar correctamente} 1`] = `
+<div
+  className="card animate__animated animate__fadeInRight"
+>
+  <img
+    alt="Test al componente"
+    src="https://localhost/algo.jpg"
+  />
+  <p>
+    Test al componente
+  </p>
+</div>
+`;

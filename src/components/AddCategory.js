@@ -12,16 +12,17 @@ const AddCategory = ({setCategorias}) => {
 
     const handleSubmit = (e)=> {
         e.preventDefault();
-
         //se paso como referencia la funcion setCategorias
-        console.log('se llamo handelSubmit',inputValue)
-        setCategorias(cat => [inputValue,...cat])
-        setInputValue('');
+        //console.log('se llamo handelSubmit',inputValue)
+        if(inputValue.trim().length > 2){
+            setCategorias(cat => [inputValue,...cat])
+            setInputValue('');
+        }
     }
 
     return (
         <form onSubmit={handleSubmit}>
-         <p>{inputValue}</p> {/*esto es solo para el test */}
+         {/*<p>{inputValue}</p> esto es solo para el test */}
             <input 
                 type='text'
                 value = {inputValue}
